@@ -3,3 +3,4 @@
 - Create folder structure
 - Create Index.html structure
 - Style image side
+- Style form side

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sing Up</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <main class="singup-body">
@@ -25,54 +25,83 @@
         </article>
       </section>
       <section class="formSection">
-        <p>
+        <p class="textInfo">
           This is not a real onlice service! You know you need something like
-          this in your life to help you realize your deepest dreams. Sing up
-          <em>now</em> to get started.
+          this in your life to help you realize your deepest dreams. <br />
+          Sing up <em>now</em> to get started.
         </p>
-        <p>You <em>know</em> you want to.</p>
+        <p class="textInfo">You <em>know</em> you want to.</p>
         <article class="formSection-form">
-          <p class="form-title">Let's do this!</p>
-          <form action="" method="post" id="registrationForm" class="registrationForm">
+          <form
+            action=""
+            method="post"
+            id="registrationForm"
+            class="registrationForm"
+          >
+            <p class="form-title">Let's do this!</p>
             <div class="div-group">
               <div class="form-group">
-                <label for="firstName">FIRST NAME</label>
-                <input type="text" name="firstName" id="firstName" />
+                <label class="form-label" for="firstName">FIRST NAME</label>
+                <input
+                  type="text"
+                  name="firstName"
+                  id="firstName"
+                  class="form-input"
+                />
               </div>
               <div class="form-group">
-                <label for="lastName">LAST NAME</label>
-                <input type="text" name="lastName" id="lastName" />
+                <label class="form-label" for="lastName">LAST NAME</label>
+                <input
+                  type="text"
+                  name="lastName"
+                  id="lastName"
+                  class="form-input"
+                />
               </div>
             </div>
             <div class="div-group">
               <div class="form-group">
-                <label for="email">EMAIL</label>
-                <input type="email" name="email" id="email" />
+                <label class="form-label" for="email">EMAIL</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-input"
+                />
               </div>
               <div class="form-group">
-                <label for="phone">PHONE NUMBER</label>
-                <input type="tel" name="phone" id="phone" />
+                <label class="form-label" for="phone">PHONE NUMBER</label>
+                <input type="tel" name="phone" id="phone" class="form-input" />
               </div>
             </div>
             <div class="div-group">
               <div class="form-group">
-                <label for="password">PASSWORD</label>
-                <input type="password" name="password" id="password" />
+                <label class="form-label" for="password">PASSWORD</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  class="form-input error"
+                />
+                <p class="error-msg">*Passwords do not match</p>
               </div>
               <div class="form-group">
-                <label for="confirmPassword">CONFIRM PASSWORD</label>
+                <label class="form-label" for="confirmPassword">CONFIRM PASSWORD</label>
                 <input
                   type="password"
                   name="confirmPassword"
                   id="confirmPassword"
+                  class="form-input error"
                 />
               </div>
             </div>
           </form>
-          <button class="submitBtn" type="submit" form="registrationForm">
-            Create Account
-          </button>
-          <p>Already have an account? <a href="#">Log in</a></p>
+          <div class="submitSection">
+            <button class="submitBtn" type="submit" form="registrationForm">
+              Create Account
+            </button>
+            <p>Already have an account? <a class="loginLink" href="#">Log in</a></p>
+          </div>
         </article>
       </section>
     </main>
