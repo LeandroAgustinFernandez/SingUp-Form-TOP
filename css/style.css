@@ -57,6 +57,7 @@ body {
 }
 .formSection {
   color: rgba(0, 0, 0, 0.8);
+  max-height: inherit;
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(215, 220, 223, 0.2);
   display: flex;
@@ -65,7 +66,7 @@ body {
   flex: 1;
 }
 .textInfo {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   padding: 0 50px;
 }
 .registrationForm {
@@ -79,7 +80,7 @@ body {
 .div-group {
   display: flex;
   gap: 8rem;
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 .form-title {
   font-size: 1.1rem;
@@ -113,8 +114,8 @@ body {
 }
 .submitBtn {
   cursor: pointer;
-  padding: 15px 50px;
-  font-size: 1.1rem;
+  padding: 10px 45px;
+  font-size: 1rem;
   color: white;
   font-weight: bold;
   background-color: lightseagreen;
